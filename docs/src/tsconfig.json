@@ -1,0 +1,10 @@
+{
+	"compilerOptions": {
+		"target": "es6",
+		"outDir": "./../dist/",
+		"removeComments": true,
+		"sourceMap": true,
+		"outFile": "./../dist/backtracking.js"
+	 },
+	"files": ["Position.ts", "Grid.ts", "index.ts"]
+}
