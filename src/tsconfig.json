@@ -1,0 +1,9 @@
+{
+	"compilerOptions": {
+		"target": "es6",
+		"outDir": "./../dist/",
+		"removeComments": true,
+    	"sourceMap": true
+	 },
+	"files": ["index.ts", "Grid.ts", "Position.ts"]
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Labyrinth Back-Tracking</title>
+</head>
+<body>
+    <h1>Labyrinth</h1>
+
+    <main>
+        <aside id="explanation">
+            <h3>Colors</h3>
+            <div class="colorExplanation">
+                <div class="colorSquare visitedCell"></div>
+                Cell determined to be unreachable
+            </div>
+            <div class="colorExplanation">
+                <div class="colorSquare pathCell"></div>
+                Cell determined to be reachable
+            </div>
+            <div class="colorExplanation">
+                <div class="colorSquare pathFound"></div>
+                Exit path found
+            </div>
+        </aside>
+
+        <table id="grid"></table>
+
+        <div id="resolvedPaths">
+            <h3>Paths found</h3>
+            <div class="ldsRingLoader"><div></div><div></div><div></div><div></div></div>
+        </div>
+        <div id="searchedArea">
+            <h3>Searched Area</h3>
+            <div class="ldsRingLoader"><div></div><div></div><div></div><div></div></div>
+        </div>
+        <br>
+    </main>
+
+
+    <button id="replayButton">Replay animation</button>
+
+    <script type="module" src="dist/index.js"></script>
+</body>
+</html>
