@@ -30,14 +30,41 @@ Here is a matrix of numbers that will be our labyrinth:
 
 
 **Beginning:**
-You are at the beginning at the box of index (0, 6) which contains the value 4.
+You start at box of index `matrix[0][6]` which contains the value 4.
 
 **Goal:**
-To arrive on a box of value 19 located at the edge of the matrix (3 possible exits: south, west and east) to get out of the labyrinth.
+Find the possible path(s) to arrive on a box of value 19 located on any of the matrix's edges (here, there are 3 possible exits: south, west and east) to get out of the labyrinth.
 
 **Rules:**
-To go through this labyrinth, here are some precisions : from any box, you can only go to the right one by adding 2, to the one below by adding 3, to the left one by subtracting 4, to the one above by subtracting 5.
-Of course, one cannot go to a box without having the right value !
+To go through the labyrinth (that is to say, to move from one box to another), you must follow these simple rules: from any box, you can only move:
+- to the right one by adding 2,
+- to the one below by adding 3,
+- to the left one by subtracting 4,
+- to the one above by subtracting 5.
 
-The labyrinth appears in a 20x20 matrix.<br>
+Of course, one cannot move to a box without having the right value !
+
+> **Exemple:**
+>
+> If we had the following matrix:
+>
+>|1|3|7|
+>|-|-|-|
+>|6|2|4|
+>|0|5|9|
+>
+> 
+> and we were on the box with value 2:
+> 
+> we could move:
+> - to the right (because 2 + 2 == 4)
+> - below (because 2 + 3 == 5)
+>
+> we could NOT move:
+> - to the left (because 2 - 4 != 6)
+> - above (because 2 - 5 != 3)
+
+
+
+The labyrinth is a 20x20 matrix.<br>
 The value -1 means that the square is inaccessible.
